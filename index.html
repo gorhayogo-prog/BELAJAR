@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pembelajaran Informatika</title>
+
+<style>
+body{
+  margin:0;
+  padding:20px;
+  font-family:Arial, sans-serif;
+  background:#2196f3;
+}
+
+.box{
+  background:#ffffff;
+  padding:20px;
+  border-radius:10px;
+}
+
+.hidden{
+  display:none;
+}
+
+button{
+  width:100%;
+  padding:10px;
+  margin-top:15px;
+  background:#2196f3;
+  color:white;
+  border:none;
+  border-radius:6px;
+}
+
+h2{
+  color:#0d47a1;
+  text-align:center;
+}
+
+p{
+  font-size:14px;
+  line-height:1.6;
+}
+</style>
+</head>
+
+<body>
+
+<!-- LOGIN -->
+<div id="login" class="box">
+  <h2>Login</h2>
+  <input type="text" placeholder="Username" style="width:100%;padding:10px;"><br><br>
+  <input type="password" placeholder="Password" style="width:100%;padding:10px;">
+  <button onclick="masuk()">Masuk</button>
+</div>
+
+<!-- MATERI -->
+<div id="materi" class="box hidden">
+  <h2>Materi Informatika Lengkap</h2>
+
+  <p><b>1. Pengertian Informatika</b><br>
+  Informatika adalah ilmu yang mempelajari cara mengolah data menjadi informasi dengan bantuan komputer dan teknologi digital.</p>
+
+  <p><b>2. Data dan Informasi</b><br>
+  Data adalah fakta mentah, sedangkan informasi adalah data yang telah diolah sehingga bermakna dan bermanfaat.</p>
+
+  <p><b>3. Sejarah Informatika</b><br>
+  Informatika bermula dari alat hitung sederhana seperti jari dan sempoa, berkembang menjadi mesin hitung, komputer, hingga teknologi modern seperti internet dan kecerdasan buatan.</p>
+
+  <p><b>4. Algoritma</b><br>
+  Algoritma adalah langkah-langkah logis dan terurut untuk menyelesaikan suatu masalah.</p>
+
+  <p><b>5. Pemrograman</b><br>
+  Pemrograman adalah proses menulis perintah atau kode agar komputer dapat menjalankan algoritma.</p>
+
+  <p><b>6. Sistem Komputer</b><br>
+  Sistem komputer terdiri dari hardware (perangkat keras), software (perangkat lunak), dan brainware (pengguna).</p>
+
+  <p><b>7. Jaringan dan Internet</b><br>
+  Jaringan komputer memungkinkan perangkat saling terhubung dan berbagi informasi melalui internet.</p>
+
+  <p><b>8. Etika dan Keamanan Digital</b><br>
+  Penggunaan teknologi harus memperhatikan etika, menjaga privasi, dan keamanan data.</p>
+
+  <p><b>Kata Bijak</b><br>
+  "Teknologi hanyalah alat, manusialah yang menentukan dampaknya."</p>
+
+  <button onclick="keluar()">Kembali ke Login</button>
+</div>
+
+<script>
+function masuk(){
+  document.getElementById("login").style.display = "none";
+  document.getElementById("materi").style.display = "block";
+}
+
+function keluar(){
+  document.getElementById("materi").style.display = "none";
+  document.getElementById("login").style.display = "block";
+}
+</script>
+
+</body>
+</html>
